@@ -393,6 +393,19 @@ nav a{
     }
 }
 
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: nowrap;   /* This forces them in one row */
+}
+
+.project {
+    flex: 1;             /* Both take equal width */
+    max-width: 500px;    /* Prevents overflow */
+}
+
 @media screen and (max-width:500px){
 
     .profile img{
